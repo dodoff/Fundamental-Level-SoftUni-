@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class PrintCharacterTriangle {
+    public static void main(String args[]){
+        Scanner console = new Scanner(System.in);
+        int input = Integer.parseInt(console.nextLine());
+        for (int raw = 0; raw < input; raw++) {
+            for (int column = 0; column <= raw; column++) {
+                System.out.print((char)(column + 97) + " ");
+            }
+            System.out.println();
+        }
+        for (int raw = input-1; raw > 0 ; raw--) {
+            for (int column = 0; column < raw; column++) {
+                System.out.print((char)(column + 97) + " ");
+            }
+            System.out.println();
+        }
+    }
+}
